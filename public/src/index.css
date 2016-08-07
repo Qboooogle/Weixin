@@ -2,7 +2,7 @@
 * @Author: QBoooogle
 * @Date:   2016-08-07 20:12:42
 * @Last Modified by:   QBoooogle
-* @Last Modified time: 2016-08-07 22:08:50
+* @Last Modified time: 2016-08-08 06:39:46
 */
 body {
   padding: 0px;
@@ -20,18 +20,174 @@ a {
 .reg {
 	margin:0 0 100px 0;
 }
-.chat_list {
+#left_list {
+  // border:1px solid red;
+   height:670px;
+}
+#left_list .left_list_box {
    border:1px solid orange;
    margin-left:64px;
-   height:700px;
+   height:670px;
    width:280px;
    background:rgba(14,14,24,1);
 }
-.chat_content {
-   border:1px solid blue;
-   height:700px;
-   width:720px;
-   margin-left:12px;
-   background:rgba(240,240,240,1);
+#left_list .left_list_top{
+	margin:0px;
+	padding:0px;
+	width:280px;
+	height:70px;
+	border:1px solid #999;
+}
+#left_list .left_top_com{
+    margin:0px;
+    padding:0px;
+    float:left;
+}
+#left_list .left_top_img{
+   border:1px solid #909;
+   height:66px;
+   width:90px;
+}
+#left_list .left_top_name{
+   border:1px solid #099;
+   height:66px;
+   width:90px;
+}
+#left_list .left_top_news{
+   border:1px solid #990;
+   height:66px;
+   width:90px;
 }
 
+#left_list .left_list_search {
+	border:1px solid #999;
+	margin:0px;
+	padding:0px;
+	width:280px;
+	height:40px;
+}
+#left_list .left_list_nav {
+	border:1px solid #999;
+	margin:0px;
+	padding:0px;
+	width:280px;
+	height:40px;
+}
+#left_list .left_nav_com{
+    margin:0px;
+    padding:0px;
+    float:left;
+}
+#left_list .left_nav_message{
+   border:1px solid #099;
+   height:38px;
+   width:90px;
+}
+#left_list .left_nav_topic{
+   border:1px solid #990;
+   height:38px;
+   width:90px;
+}
+#left_list .left_nav_friend{
+   border:1px solid #909;
+   height:38px;
+   width:90px;
+}
+#left_list .left_list_item{
+   border:1px solid #909;
+   height:516px;
+   width:280px;
+   overflow:hidden;
+}
+
+
+
+
+
+#right_content {
+  //border:1px solid green;
+  height:670px;
+}
+#right_content .right_content_box {
+   border:1px solid blue;
+   height:670px;
+   width:720px;
+   margin-left:20px;
+   background:rgba(240,240,240,1);
+}
+#right_content .right_top {
+   border:1px solid gray;
+   height:52px;
+   width:720px;
+   margin:0px;
+   padding:0px;
+}
+#right_content .right_chat_time {
+   border:1px solid black;
+   height:52px;
+   width:720px;
+   margin:0px;
+   padding:0px;
+}
+#right_content .right_chat_content {
+   border:1px solid blue;
+   height:320px;
+   width:720px;
+   margin:0px;
+   padding:0px;
+}
+#right_content .right_chat_send {
+   border:1px solid red;
+   height:184px;
+   width:720px;
+   margin:0px;
+   padding:0px;
+}
+#right_content .tool_select {
+   border:1px solid #770;
+   height:30px;
+   width:720px;
+   margin:0px;
+   padding:0px;
+}
+#right_content .tool_select img{
+   border:1px solid red;
+   float:left;
+}
+#right_content .send_command {
+   border:1px solid #077;
+   height:50px;
+   width:720px;
+   margin:0px;
+   padding:0px;
+   position:relative;
+}
+#right_content .send_command span:nth-child(1){
+	position:absolute;
+	right:20px;
+	//top:0px;
+	bottom:0px;
+	color:red;
+
+}
+#right_content .send_command span:nth-child(2){
+   position:absolute;
+	right:120px;
+	bottom:0px;
+	color:red;
+}
+#right_content .send_word {
+   border:1px solid #707;
+   height:100px;
+   width:720px;
+   margin:0px;
+   padding:0px;
+}
+
+#chatcontent p{
+	color:#111;
+}
+textarea {
+	border-style:none;
+	background:rgba((240,240,240,1);
+}

@@ -1,0 +1,174 @@
+/*
+* @Author: QBoooogle
+* @Date:   2016-08-07 20:39:17
+* @Last Modified by:   QBoooogle
+* @Last Modified time: 2016-08-07 20:39:35
+*/
+body {
+margin:0px;
+padding:0px;
+}
+
+canvas {
+  opacity: 0.9;
+}
+
+/*Buttons Style */
+.codrops-demos {
+  font-size: 0.8em;
+  text-align:center;
+  position:absolute;
+  z-index:99;
+  width:96%;
+}
+
+.codrops-demos a {
+  display: inline-block;
+  margin: 0.35em 0.1em;
+  padding: 0.5em 1.2em;
+  outline: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  border-radius: 2px;
+  font-size: 110%;
+  border: 2px solid transparent;
+  color:#fff;
+}
+
+.codrops-demos a:hover,
+.codrops-demos a.current-demo {
+  border-color: #383a3c;
+}
+
+#reg {
+  width:640px;
+  height:350px;
+  border:0px solid #ccc;
+  margin-top:12%;
+  margin-left:26%;
+  z-index:9999;
+}
+#reg h2 {
+  height:10px;
+  line-height:40px;
+  text-align:center;
+  font-size:26px;
+  letter-spacing:3px;
+  color:#283;
+  margin:0;
+  padding:0;
+  cursor:move;
+}
+#reg h2 img {
+  float:right;
+  position:relative;
+  top:14px;
+  right:8px;
+  cursor:pointer;
+}
+#reg dl {
+  font-size:18px;
+  color:#080;
+  margin:50px 110px 0 0;
+  position:relative;
+}
+#reg dl dd {
+  height:40px;
+  padding:8px 0;
+}
+#reg dl dd input.text, #reg dl dd select {
+  width:240px;
+  height:34px;
+  background:#444;
+  font-size:22px;
+  color:#fff;
+  border-radius: 5%;
+  border:1px;
+}
+#reg dl dd select {
+  width:202px;
+}
+
+#reg dl dd.ps strong.num {
+  padding:0 2px;
+}
+#reg dl dd.ps span.clear {
+  color:#06f;
+  cursor:pointer;
+}
+#reg dl dd input.submit {
+  width:103px;
+  height:31px;
+  background:url(img/login.png) no-repeat;
+  border:0px;
+  border-radius: 10%;
+  cursor:pointer;
+  margin-top:10px;
+}
+#reg dl dd span.info, #reg dl dd span.error, #reg dl dd span.succ {
+  display:block;
+  font-size:12px;
+  color:#33;
+  width:165px;
+  height:32px;
+  line-height:32px;
+  padding:0 0 0 35px;
+  position:absolute;
+  letter-spacing:1px;
+  display:none;
+}
+#reg dl dd span.info {
+  margin-left:-40px;
+  text-align: left;
+  color:red;
+}
+#reg dl dd span.error {
+  margin-left:-42px;
+  color:blue;
+}
+#reg dl dd span.succ {
+  height:14px;
+  line-height:14px;
+  margin-left:-110px;
+  color:green;
+}
+#reg dl dd span.info_user {
+  height:43px;
+  line-height:18px;
+  padding-top:3px;
+  top:8px;
+  left:495px;
+}
+#reg dl dd span.error_user {
+  top:8px;
+  left:495px;
+}
+#reg dl dd span.succ_user {
+  top:16px;
+  left:495px;
+}
+#reg dl dd span.info_pass {
+  width:244px;
+  height:102px;
+  padding:4px 0 0 16px;
+  top:45px;
+  left:512px;
+  letter-spacing:0;
+}
+#reg dl dd span.info_pass p {
+  height:5px;
+  line-height:35px;
+}
+#reg dl dd span.info_pass p strong.s {
+  color:#ccc;
+}
+#reg dl dd span.error_pass {
+  top:63px;
+  left:495px;
+}
+#reg dl dd span.succ_pass {
+  top:72px;
+  left:495px;
+}

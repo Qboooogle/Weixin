@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="name" content="content" charset = "UTF-8">
+    <title>仿微信在线聊天室</title>
+    <link rel='stylesheet' href='stylesheets/bootstrap.min.css' />
+     <link rel='stylesheet' href='src/index.css' />
+     <link rel='stylesheet' href='stylesheets/cavas.css' />
+  </head>
+  <body>
+
+
+  <nav class="codrops-demos">
+<!--       <div class = 'row'>
+           <div class = 'col-md-3 col-xs-3 col-md-push-4 col-xs-push-0'>
+            <h1>仿微信聊天室</h1>
+          </div>
+      </div>
+ -->
+  <div class = 'row'>
+      <div class = 'col-md-1 col-xs-1'>
+          <div class = "topleft">
+                <h1>左边界</h1>
+            </div>
+      </div>
+      <div class = 'col-md-3 col-xs-3' style="border:1px solid red;height:700px;">
+          <div class = "chat_list" style = "">
+                <h1>聊天列表</h1>
+
+                <!-- <ul class="nav nav-tabs">
+                  <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                      Drop<span class=""></span>
+                    </a>
+                    <ul class="dropdown-menu list-group">
+                      <li class="list-group-item">Cras justo odio</li>
+                      <li class="list-group-item">Dapibus ac facilisis in</li>
+                      <li class="list-group-item">Morbi leo risus</li>
+                      <li class="list-group-item">Porta ac consectetur ac</li>
+                      <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+                  </li>
+                  <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">
+                      Drop<span class=""></span>
+                    </a>
+                    <ul class="dropdown-menu list-group">
+                      <li class="list-group-item">Cras justo odio</li>
+                      <li class="list-group-item">Dapibus ac facilisis in</li>
+                      <li class="list-group-item">Morbi leo risus</li>
+                      <li class="list-group-item">Porta ac consectetur ac</li>
+                      <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+                  </li>
+                  <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">
+                      Drop<span class=""></span>
+                    </a>
+                    <ul class="dropdown-menu list-group" aria-labelledby="dropdownMenu1">
+                      <li class="list-group-item">Cras justo odio</li>
+                      <li class="list-group-item">Dapibus ac facilisis in</li>
+                      <li class="list-group-item">Morbi leo risus</li>
+                      <li class="list-group-item">Porta ac consectetur ac</li>
+                      <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+                  </li>
+                </ul> -->
+
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Drop
+    <span class=""></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li><a href="#">Separated link</a></li>
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li><a href="#">Separated link</a></li>
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Drop
+    <span class=""></span>
+  </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <li><a href="#">2Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li><a href="#">Separated link</a></li>
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li><a href="#">Separated link</a></li>
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Drop
+    <span class=""></span>
+  </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">3Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li><a href="#">Separated link</a></li>
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li><a href="#">Separated link</a></li>
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+
+         </div>
+      </div>
+      <div id = "chatonline" class = 'col-md-7 col-xs-7' style="border:1px solid green;height:700px;">
+         <div class = 'chat_content' style = "">
+            <h2>女神</h2>
+            <h6>
+                <div class = "chatshow" id = "chatcontent">
+                </div>
+            </h6>
+            <div class = "chatbottom">
+                <table cellpadding = "0" cellspacing = "0">
+                    <tr>
+                        <td colspan = "2" id = "face" class = "pd"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <textarea id = "txtcontent" clos = "364" rows = "13" >
+                            </textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class = "pl">
+                            <input id = "chatsend" type = "button" value = "发送" class= "btn"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan = "2" class = "pt">
+                        发送内容不能为空
+                        </td>
+                    </tr>
+                </table>
+                <span id = "chatmsg" class= "chattip">正在发送消息...</span>
+            </div>
+         </div>
+       </div>
+       <div class = 'col-md-1 col-xs-1'>
+          <div class = "topleft">
+                <h1>右边界</h1>
+                <div class = "chatshow" id = "chatcontent">
+                </div>
+            </div>
+      </div>
+<!--     <div class = "chattop">
+
+	    <div class = "topright">
+	        <h3>在线人数</h3>
+		    <div class = "chatshow" >
+		    </div>
+	    </div>
+    </div> -->
+
+    </div>
+  </div>
+</nav>
+   <canvas id="canvas">  </canvas>
+    <!--     <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+     <span id="busuanzi_container_page_pv">
+  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+</span> -->
+    </body>
+    <script src="javascripts/jquery-1.11.3.js"></script>
+    <script src="src/index.js"></script>
+    <script src="javascripts/cavas.js"></script>
+    <script async src="javascripts/bootstrap.min.js"></script>
+    <script async src="javascripts/angular/angular.min.js"></script>
+    <script async src="javascripts/busuanzi.pure.mini.js"></script>
+    <script>
+        $("#chatmsg").ajaxStart(function() {
+             $(this).show();
+         });
+         $("#chatmsg").ajaxStop(function() {
+             $(this).html("已完成").hide();
+         });
+         initface();
+         getmessagelist();
+         getonlinelist();
+        $("#chatsend").click(function() {
+        	var $content = $("#txtcontent");
+            if ($content.val() != '') {
+            	sendcontent($content.val());
+            } else {
+            	alert("发送内容不能为空！");
+            	$content.focus();
+          		return false;
+            }
+        });
+
+        $("table tr td img").click(function() {
+        	var strcontent = $("#txtcontent").val + "<:"+this.id+":>";
+        	$("#txtcontent").val(strcontent);
+        })
+
+        function sendcontent(content) {
+        	$.ajax({
+        		type:"POST",
+        		url:"/chat_sendmsg",
+        		data:"action=sendcontent&d="+new Date() +"&content=" +content,
+        		success:function(data) {
+        			if(data == "True") {
+        				getmessagelist();
+        				$("#txtcontent").val('');
+        			} else {
+        				alert("发送失败");
+        				return false;
+        			}
+        		}
+        	})
+        }
+
+        function getmessagelist() {
+        	$.ajax({
+        		type:"POST",
+        		url:"/chat_getmsg",
+        		data:"action=getcontent&d="+new Date(),
+        		success:function(data) {
+        			//alert("获取成功");
+        			if(data) {
+        				//alert(data.name);
+        				if(data.name) {
+        					var newp = document.createElement("p");
+	                        newp.innerHTML = "姓名：" + data.name + "(" + data.date + ")" + "发言：" + data.word;
+	                        $("#chatcontent").append(newp);
+        				}
+
+        			}
+        		}
+        	});
+        	autoupdcontent();
+        }
+
+        function getonlinelist() {
+        	$.ajax({
+        		type:"POST",
+        		url:"/online_list",
+        		data:"action=onlinelist&d="+new Date(),
+        		success:function(data) {
+        			if(data == "True")
+        				$("#chatonline").html(data);
+        		}
+        	});
+        	autoupdcontent();
+        }
+
+        function initface() {
+        	var strHtml = '';
+        	for(var i = 0; i <= 3; i++) {
+        		//strHtml += "<img src = 'face/" + i +".jpg'id='"+i+"'/>"
+        		strHtml= "***********"
+        	}
+        	$("#face").html(strHtml);
+        }
+
+        function autoupdcontent() {
+        	setTimeout(getmessagelist, 500);
+        	//setTimeout(getonlinelist,6000);
+        }
+
+    </script>
+</html>

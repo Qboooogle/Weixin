@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="name" content="content" charset = "UTF-8">
+    <title>仿微信聊天室登录</title>
+    <link rel='stylesheet' href='stylesheets/cavas.css' />
+    <link rel='stylesheet' href='stylesheets/bootstrap.min.css' />
+    <link rel='stylesheet' href='src/index.css' />
+  </head>
+  <body>
+<nav class="codrops-demos">
+
+  <div class = 'row'>
+    <div class = 'col-md-3 col-xs-3 col-md-push-4 col-xs-push-0 login'>
+      <h1>聊天室登录页面</h1>
+      <p>Welcome to Login</p>
+
+      <div class = "reg">
+        <div class="input-group input-group">
+        <span class="input-group-addon" >用户：</span>
+        <input type="text" id="username" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
+      </div>
+      <br>
+      <div class = "reg">
+        <div class="input-group input-group">
+        <span class="input-group-addon" >密码：</span>
+        <input type="text" id="userpass" class="form-control" placeholder="Password" aria-describedby="sizing-addon1">
+      </div>
+          <br>
+          <br>
+          <div class = "userbtn">
+              <input id = "login" type = "button" value = "登录" class = "btn btn-success"/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+              <input id = "cancer" type = "button" value = "取消" class = "btn btn-danger"/>
+          </div>
+          <span id = "logmsg" class = "logtip" style = "display:none">正在发送登录请求.... </span>
+      </div>
+    </div>
+  </div>
+</nav>
+    <canvas id="canvas">  </canvas>
+    </body>
+    <script src="javascripts/jquery-1.11.3.js"></script>
+    <script src="javascripts/cavas.js"></script>
+    <script src="src/index.js"></script>
+    <script async src="javascripts/bootstrap.min.js"></script>
+    <script async src="javascripts/angular/angular.min.js"></script>
+    <script async src="javascripts/busuanzi.pure.mini.js"></script>
+    <script>
+        $("#logmsg").ajaxStart(function() {
+             $(this).show();
+         });
+         $("#logmsg").ajaxStop(function() {
+             $(this).html("请求处理已完成").hide();
+         });
+        $("#login").click(function() {
+          	var $username = $("#username");
+          	var $userpass = $("#userpass");
+          	if ($username.val() != '' &&$userpass != '') {
+          		userlogin($username.val(), $userpass.val());
+          	} else if ($username.val() == '') {
+          		alert("用户名不能为空！");
+          		$username.focus();
+          		return false;
+          	} else {
+          		alert("密码不能为空！");
+          		$userpass.focus();
+          		return false;
+          	}
+        });
+	    function userlogin(name, pass) {
+	    	$.ajax({
+	    		type:"POST",
+	    		url:"/user_login",
+	    		data:"action=Login&d="+new Date() + "&name=" + name + "&pass=" + pass,
+	    		success: function(data) {
+	    			if(data = "True") {
+	    				window.location = "chat.html";
+	    			} else {
+	    				alert("用户名或密码错误！")
+	    				return false;
+	    			}
+	    		}
+	    	});
+	    }
+  </script>
+</html>
